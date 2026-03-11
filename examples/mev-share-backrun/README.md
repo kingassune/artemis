@@ -49,7 +49,7 @@ defaults to `1` and can be updated via `set_block()`.
 ### Placeholder transaction
 
 The backrun transaction (`0x0200`) is intentionally a stub. To build a real
-bot, replace `create_test_bundle`'s `BundleItem::Tx` entry with a proper
+bot, replace `create_backrun_bundle`'s `BundleItem::Tx` entry with a proper
 signed EIP-1559 transaction that implements your backrun logic.
 
 ## Running
@@ -72,5 +72,5 @@ Optional flag (defaults to the public endpoint):
 cargo test -p mev-share-backrun
 ```
 
-The unit tests in `strategy.rs` exercise `create_test_bundle` directly,
+The unit tests in `strategy.rs` exercise `create_backrun_bundle` directly,
 avoiding the need for a live node or network connection.
