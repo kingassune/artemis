@@ -2676,6 +2676,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "mev-share-backrun"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "artemis-core",
+ "async-trait",
+ "clap 4.2.7",
+ "ethers",
+ "mev-share",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
 name = "mev-share-bindings"
 version = "0.1.0"
 dependencies = [
