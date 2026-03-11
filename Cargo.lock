@@ -2600,6 +2600,20 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "36eb31c1778188ae1e64398743890d0877fef36d11521ac60406b42016e8c2cf"
 
 [[package]]
+name = "liquidation-monitor"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "artemis-core",
+ "async-trait",
+ "clap 4.2.7",
+ "ethers",
+ "tokio",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
 name = "lock_api"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
