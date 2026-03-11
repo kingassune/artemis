@@ -1,0 +1,19 @@
+[package]
+name = "simple-dex-arb"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[[bin]]
+name = "simple-dex-arb"
+path = "src/main.rs"
+
+[dependencies]
+artemis-core = { path = "../../crates/artemis-core" }
+ethers = { version = "2", features = ["ws", "rustls"] }
+tokio = { version = "1.18", features = ["full"] }
+async-trait = "0.1.64"
+anyhow = "1.0.70"
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+clap = { version = "4.2.5", features = ["derive"] }
